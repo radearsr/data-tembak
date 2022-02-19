@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: rgb(49, 53, 82);
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+  color: rgb(238, 230, 206);
+}
+
+.alert {
+  backdrop-filter: blur(1rem);
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 20rem;
+  color: rgb(238, 230, 206);
+  font-weight: bold;
+  position: absolute;
+  right: -21rem;
+  top: 10%;
+  transition: 0.5s;
+}
+
+.alert.active {
+  right: 0;
+  top: 10%;
+}
+
+.success {
+  background-color: rgb(46, 176, 134);
+}
+
+.danger {
+  background-color: rgb(184, 64, 94);
+}
+
+form {
+  display: block;
+  max-width: 50rem;
+  margin: 2.2rem auto;
+  background-color: rgb(238, 230, 206);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.form-group {
+  display: block;
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.form-group .form-label {
+  font-size: 1.2rem;
+  width: 25%;
+  font-weight: 700;
+  color: rgb(49, 53, 82);
+}
+
+.form-group .form-control {
+  font-size: 1.2rem;
+  padding: 0.7rem 0.3rem;
+  width: 75%;
+  border: 0.1rem solid rgba(49, 53, 82, 0.4);
+  border-radius: 0.5rem;
+  background-color: rgba(252, 233, 176, 0.5);
+}
+
+.form-group .form-control:focus {
+  box-shadow: 0 0 0.2rem 0.2rem rgba(49, 53, 82, 0.1);
+}
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  display: block;
+  margin: 1rem auto;
+  color: rgb(238, 230, 206);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.btn-submit {
+  background-color: rgb(46, 176, 134);
+}
+
+.btn-wait {
+  background-color: rgb(184, 64, 94, 0.5);
+}
+
+a.btn-link {
+  text-decoration: none;
+  text-align: center;
+  background-color: rgb(49, 53, 82);
+}
+
+.d-none {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .form-group {
+    flex-wrap: wrap;
+  }
+  .form-group .form-label {
+    width: 100%;
+  }
+
+  .form-group .form-control {
+    width: 100%;
+  }
+}

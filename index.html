@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speread Sheet Input Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Data Hasil Tembak</h1>
+    <p class="alert success">Data berhasil masuk..</p>
+
+    <p class="alert danger">Data gagal masuk..</p>
+    <form name="submit-to-google-sheet">
+      <div class="form-group">
+        <label for="resi" class="form-label">Resi</label>
+        <input
+          type="text"
+          name="resi"
+          id="resi"
+          class="form-control"
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="toko" class="form-label">Toko</label>
+        <select name="toko" id="toko" class="form-control">
+          <option selected disabled>Pilih</option>
+          <option value="Tiktok">Tiktok</option>
+          <option value="Lazada">Lazada</option>
+        </select>
+      </div>
+
+      <input type="hidden" name="kurir" value="JX" />
+      <input type="hidden" name="kode_joki" value="agungdk" />
+
+      <div class="form-group" class="form-control">
+        <label for="namaJoki" class="form-label">Nama Joki</label>
+        <input
+          type="text"
+          name="nama_joki"
+          id="namaJoki"
+          class="form-control"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="resi" class="form-label">Type</label>
+        <select name="type" id="" class="form-control">
+          <option selected disabled>Pilih</option>
+          <option
+            value="Infinix Smart 6 NFC 2/32
+          "
+          >
+            Infinix Smart 6 NFC 2/32
+          </option>
+          <option
+            value="Realme Narzo 50i 
+        "
+          >
+            Realme Narzo 50i
+          </option>
+          <option value="Realme C11 2/32">Realme C11 2/32</option>
+          <option value="Infinix Hot 11 Play 3/32">
+            Infinix Hot 11 Play 3/32
+          </option>
+          <option value="Redmi 10 4/64">Redmi 10 4/64</option>
+          <option value="Infinix Hot 11 Play 4/64">
+            Infinix Hot 11 Play 4/64
+          </option>
+        </select>
+      </div>
+
+      <div class="form-group d-none" id="akunTT">
+        <label for="akun" class="form-label">Akun Tiktok</label>
+        <input type="text" name="akun_tt" id="akun" class="form-control" />
+      </div>
+
+      <div class="form-group" id="akunTT">
+        <label for="diterima" class="form-label">Diterima</label>
+        <input type="text" name="diterima" id="diterima" class="form-control" />
+      </div>
+
+      <a
+        class="btn btn-link"
+        target="_blank"
+        href="https://docs.google.com/spreadsheets/d/1ye4mWuU9h5-yiN4dbawSTrwA0v29FGRRIKUOJoZ3cRA/edit#gid=0"
+        >SpreadSheet</a
+      >
+      <button type="submit" class="btn btn-submit">Kirim</button>
+      <button type="submit" class="btn btn-wait d-none" disabled>Tunggu</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
