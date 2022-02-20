@@ -8,8 +8,11 @@
 }
 
 body {
-  position: relative;
   background-color: rgb(49, 53, 82);
+}
+
+.container {
+  position: relative;
   overflow-x: hidden;
 }
 
