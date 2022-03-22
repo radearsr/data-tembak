@@ -31,10 +31,20 @@
             <option selected disabled>Pilih</option>
             <option value="Tiktok">Tiktok</option>
             <option value="Lazada">Lazada</option>
+            <option value="JDID">JDID</option>
           </select>
         </div>
 
-        <input type="hidden" name="kurir" value="JX" />
+        <div class="form-group">
+          <label for="kurir" class="form-label">Kurir</label>
+          <select name="kurir" id="" class="form-control">
+            <option selected disabled>Pilih</option>
+            <option value="JX">JX</option>
+            <option value="No Pesanan">No Pesanan</option>
+            <option value="-">None</option>
+          </select>
+        </div>
+
         <input type="hidden" name="kode_joki" value="agungdk" />
 
         <div class="form-group" class="form-control">
@@ -71,6 +81,8 @@
             <option value="Infinix Hot 11 Play 4/64">
               Infinix Hot 11 Play 4/64
             </option>
+            <option value="Nokia 105 2019">Nokia 105 2019</option>
+            <option value="Samsung M12 4/64">Samsung M12 4/64</option>
           </select>
         </div>
 
@@ -97,6 +109,11 @@
             id="diterima"
             class="form-control"
           />
+        </div>
+
+        <div class="form-group d-none" id="price">
+          <label for="harga" class="form-label">Harga</label>
+          <input type="text" name="harga" id="harga" class="form-control" />
         </div>
 
         <a

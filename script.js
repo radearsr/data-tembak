@@ -6,10 +6,13 @@ const alertDanger = document.querySelector(".alert.danger");
 
 const tokoInput = document.querySelector("#toko");
 const akunInput = document.querySelector("#akunTT");
+const priceInput = document.querySelector("#price");
 
 tokoInput.addEventListener("input", function () {
   if (tokoInput.value == "Tiktok") {
     akunInput.classList.remove("d-none");
+  } else if (tokoInput.value == "JDID") {
+    priceInput.classList.remove("d-none");
   } else {
     akunInput.classList.add("d-none");
   }
