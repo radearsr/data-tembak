@@ -14,6 +14,7 @@
 
       <p class="alert danger">Data gagal masuk..</p>
       <form name="submit-to-google-sheet">
+        <!-- Input Resi -->
         <div class="form-group">
           <label for="resi" class="form-label">Resi</label>
           <input
@@ -25,6 +26,7 @@
           />
         </div>
 
+        <!-- Input Toko -->
         <div class="form-group">
           <label for="toko" class="form-label">Toko</label>
           <select name="toko" id="toko" class="form-control">
@@ -35,18 +37,22 @@
           </select>
         </div>
 
+        <!-- Input  Nama / Jenis Kurir-->
         <div class="form-group">
           <label for="kurir" class="form-label">Kurir</label>
           <select name="kurir" id="" class="form-control">
             <option selected disabled>Pilih</option>
             <option value="JX">JX</option>
+            <option value="LEX ID">LEX ID</option>
             <option value="No Pesanan">No Pesanan</option>
             <option value="-">None</option>
           </select>
         </div>
 
+        <!-- hide input kode joki -->
         <input type="hidden" name="kode_joki" value="agungdk" />
 
+        <!-- Input nama penerima -->
         <div class="form-group" class="form-control">
           <label for="namaJoki" class="form-label">Nama Joki</label>
           <input
@@ -57,6 +63,7 @@
           />
         </div>
 
+        <!-- Input nama barang -->
         <div class="form-group">
           <label for="resi" class="form-label">Type</label>
           <select name="type" id="" class="form-control">
@@ -83,9 +90,12 @@
             </option>
             <option value="Nokia 105 2019">Nokia 105 2019</option>
             <option value="Samsung M12 4/64">Samsung M12 4/64</option>
+            <option value="Samsung A03 4/64">Samsung A03 4/64</option>
+            <option value="Redmi 9A 2/32"></option>
           </select>
         </div>
 
+        <!-- Input Akun (Tiktok) -->
         <div class="form-group d-none" id="akunTT">
           <label for="akun" class="form-label">Akun Tiktok</label>
           <select name="akun_tt" id="akun" class="form-control">
@@ -101,7 +111,8 @@
           </select>
         </div>
 
-        <div class="form-group" id="akunTT">
+        <!-- Input tanggal diterima -->
+        <div class="form-group">
           <label for="diterima" class="form-label">Diterima</label>
           <input
             type="text"
@@ -111,6 +122,7 @@
           />
         </div>
 
+        <!-- Input harga -->
         <div class="form-group d-none" id="price">
           <label for="harga" class="form-label">Harga</label>
           <input type="text" name="harga" id="harga" class="form-control" />
